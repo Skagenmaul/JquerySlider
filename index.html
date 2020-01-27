@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <!-- Genom att importera taggen och länken hämtas jquery-scriptet till sidan. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Följande kod säger att: om javascript är avstängt kommer koden inte exekveras, dvs då blir alla bilderna synliga.
+        Om javascript är aktiverat kommer koden exekveras och allt 'överflöde' i css kommer då gömmas. Se även Daniels Kommentar i .js-->
   <script type="text/javascript">
-
-  $("#window").css("overflow", "hidden");
+    
+  $("#window").css("overflow", "hidden");  
 
   </script>
+  
   <meta charset="utf-8">
-  <title>  </title>
+  <title> Sjukt Häftig Slider </title>
   <link rel="stylesheet" type="text/css" href="css/slider.css">
-
-
 
 </head>
 <body>
@@ -41,18 +43,13 @@
         <!-- <a href="https://lilleskogsbygg.se/"> --> <img src="imgs/UterumNatt.jpg" alt="Nattens Uterum"> <!-- </a> -->
 
       </div>
-
+    <!-- Nedan följer kod för navigations-knapparna (prev & next). Dessa ligger i 'a' eftersom exemplet jag hittade också låg i 'a'. De skulle lika gärna kunna ligga i <button>.-->
+      <!-- den konstiga efterföljande koden är unicode för indikatorn 'åt sidan'. -->
       <a class="prev"> &#10094; </a>
       <a class="next"> &#10095; </a>
 
     </div>
   </main>
 
-
-
-
-  <script src="js/slider.js" charset="utf-8">
-
-  </script>
 </body>
 </html>
