@@ -1,5 +1,4 @@
-
-
+/* kod för window som säger höjd, margin osv. */
 #window {
 
   height: auto;
@@ -10,7 +9,7 @@
   justify-content: center;
 
 }
-
+/* Kod för bilderna där max-höjd och bredd anges.  */
 #imgs{
 
   height:320px;
@@ -18,17 +17,19 @@
   position: relative;
 
 }
+/* Säger att 'a' ska gömmas om inte javascript aktiverar det. */
 a{
 
 display: none;
 
 }
+/* Gör samma som innan och påverkar inte något. */
 .imgs a{
 
 display: block;
 }
 
-/* Css för "Prev" och "next" - knapparna*/
+/* Css för "Prev" och "next" - knapparna. lite transition, border och annat gott*/
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -62,7 +63,7 @@ display: block;
   position: absolute;
 
 } */
-
+/* Säger höjd och bredd på footer och nav */
 nav, footer{
 
   width: 100%;
@@ -73,6 +74,8 @@ nav, footer{
 
 
 }
+
+/* Säger hur texten ska se ut i nav, footer osv. */
 nav, footer, p{
   margin-top: 5px;
   text-align: center;
